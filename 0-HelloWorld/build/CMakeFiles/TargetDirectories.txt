@@ -1,0 +1,4 @@
+/home/alien/Desktop/QtCreator/HelloWorld/build/CMakeFiles/HelloWorld.dir
+/home/alien/Desktop/QtCreator/HelloWorld/build/CMakeFiles/edit_cache.dir
+/home/alien/Desktop/QtCreator/HelloWorld/build/CMakeFiles/rebuild_cache.dir
+/home/alien/Desktop/QtCreator/HelloWorld/build/CMakeFiles/HelloWorld_autogen.dir

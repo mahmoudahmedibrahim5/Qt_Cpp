@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_HelloWorld_FILE /home/alien/Desktop/QtCreator/HelloWorld/build/HelloWorld)
+set(__QT_DEPLOY_TARGET_HelloWorld_TYPE EXECUTABLE)
