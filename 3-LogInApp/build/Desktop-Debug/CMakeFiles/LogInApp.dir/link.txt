@@ -1,0 +1,1 @@
+/usr/bin/clang++ -DQT_QML_DEBUG -g -Xlinker --dependency-file=CMakeFiles/LogInApp.dir/link.d CMakeFiles/LogInApp.dir/LogInApp_autogen/mocs_compilation.cpp.o CMakeFiles/LogInApp.dir/main.cpp.o CMakeFiles/LogInApp.dir/loginpage.cpp.o CMakeFiles/LogInApp.dir/application.cpp.o -o LogInApp  /usr/lib/libQt5Widgets.so.5.15.16 /usr/lib/libQt5Gui.so.5.15.16 /usr/lib/libQt5Core.so.5.15.16
