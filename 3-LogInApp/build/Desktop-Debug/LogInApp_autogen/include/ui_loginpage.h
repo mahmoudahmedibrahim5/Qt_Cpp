@@ -66,6 +66,7 @@ public:
         QFont font;
         font.setBold(true);
         LogInPage->setFont(font);
+        LogInPage->setLayoutDirection(Qt::LayoutDirection::LeftToRight);
         centralwidget = new QWidget(LogInPage);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         gridLayout = new QGridLayout(centralwidget);
@@ -193,6 +194,12 @@ public:
         LogInPage->setMenuBar(menubar);
         statusbar = new QStatusBar(LogInPage);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
+        QFont font3;
+        font3.setPointSize(10);
+        font3.setBold(true);
+        font3.setStyleStrategy(QFont::PreferAntialias);
+        statusbar->setFont(font3);
+        statusbar->setAutoFillBackground(false);
         LogInPage->setStatusBar(statusbar);
 
         retranslateUi(LogInPage);

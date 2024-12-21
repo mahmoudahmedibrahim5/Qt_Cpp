@@ -328,4 +328,4 @@ CMakeFiles/LogInApp.dir/loginpage.cpp.o: \
   /usr/include/qt/QtWidgets/QVBoxLayout \
   /usr/include/qt/QtWidgets/QWidget \
   /usr/include/qt/QtWidgets/QMessageBox \
-  /usr/include/qt/QtWidgets/qmessagebox.h
+  /usr/include/qt/QtWidgets/qmessagebox.h /usr/include/qt/QtGui/QPalette
