@@ -200,7 +200,11 @@ li.checked::marker { content: &quot;\2612&quot;; }
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEditPassword"/>
+           <widget class="QLineEdit" name="lineEditPassword">
+            <property name="echoMode">
+             <enum>QLineEdit::EchoMode::Password</enum>
+            </property>
+           </widget>
           </item>
           <item>
            <spacer name="horizontalSpacer_4">
