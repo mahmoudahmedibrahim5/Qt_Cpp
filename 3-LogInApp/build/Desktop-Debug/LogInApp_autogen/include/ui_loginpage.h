@@ -32,6 +32,7 @@ public:
     QWidget *centralwidget;
     QGridLayout *gridLayout;
     QVBoxLayout *verticalLayout_2;
+    QHBoxLayout *horizontalLayout_4;
     QTextBrowser *textBrowser;
     QSpacerItem *verticalSpacer;
     QVBoxLayout *verticalLayout;
@@ -50,6 +51,7 @@ public:
     QSpacerItem *horizontalSpacer_6;
     QPushButton *pushButtonLogin;
     QSpacerItem *horizontalSpacer_5;
+    QLabel *label;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -69,25 +71,32 @@ public:
         LogInPage->setLayoutDirection(Qt::LayoutDirection::LeftToRight);
         centralwidget = new QWidget(LogInPage);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
+        centralwidget->setStyleSheet(QString::fromUtf8("background-image: url(:/resource/img/Background_Natural background.jpeg);"));
         gridLayout = new QGridLayout(centralwidget);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         verticalLayout_2 = new QVBoxLayout();
         verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        horizontalLayout_4 = new QHBoxLayout();
+        horizontalLayout_4->setObjectName(QString::fromUtf8("horizontalLayout_4"));
         textBrowser = new QTextBrowser(centralwidget);
         textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
-        QSizePolicy sizePolicy1(QSizePolicy::Expanding, QSizePolicy::Preferred);
-        sizePolicy1.setHorizontalStretch(0);
-        sizePolicy1.setVerticalStretch(20);
+        QSizePolicy sizePolicy1(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy1.setHorizontalStretch(80);
+        sizePolicy1.setVerticalStretch(30);
         sizePolicy1.setHeightForWidth(textBrowser->sizePolicy().hasHeightForWidth());
         textBrowser->setSizePolicy(sizePolicy1);
         QFont font1;
         font1.setPointSize(16);
         font1.setBold(false);
         textBrowser->setFont(font1);
+        textBrowser->setStyleSheet(QString::fromUtf8("background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));"));
 
-        verticalLayout_2->addWidget(textBrowser);
+        horizontalLayout_4->addWidget(textBrowser);
 
-        verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        verticalLayout_2->addLayout(horizontalLayout_4);
+
+        verticalSpacer = new QSpacerItem(20, 30, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         verticalLayout_2->addItem(verticalSpacer);
 
@@ -186,7 +195,18 @@ public:
         verticalLayout_2->addLayout(horizontalLayout_3);
 
 
-        gridLayout->addLayout(verticalLayout_2, 0, 0, 1, 1);
+        gridLayout->addLayout(verticalLayout_2, 1, 0, 1, 1);
+
+        label = new QLabel(centralwidget);
+        label->setObjectName(QString::fromUtf8("label"));
+        QSizePolicy sizePolicy2(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy2.setHorizontalStretch(20);
+        sizePolicy2.setVerticalStretch(30);
+        sizePolicy2.setHeightForWidth(label->sizePolicy().hasHeightForWidth());
+        label->setSizePolicy(sizePolicy2);
+        label->setStyleSheet(QString::fromUtf8("border-image: url(:/resource/img/download.jpeg);"));
+
+        gridLayout->addWidget(label, 0, 0, 1, 1);
 
         LogInPage->setCentralWidget(centralwidget);
         menubar = new QMenuBar(LogInPage);
@@ -225,6 +245,7 @@ public:
         labelUsername->setText(QCoreApplication::translate("LogInPage", "Username", nullptr));
         labelPassword->setText(QCoreApplication::translate("LogInPage", "Password", nullptr));
         pushButtonLogin->setText(QCoreApplication::translate("LogInPage", "Log in", nullptr));
+        label->setText(QString());
     } // retranslateUi
 
 };

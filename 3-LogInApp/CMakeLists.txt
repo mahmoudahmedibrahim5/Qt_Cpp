@@ -39,6 +39,9 @@ else()
         add_executable(LogInApp
             ${PROJECT_SOURCES}
             application.h application.cpp application.ui
+            resource.qrc
+
+
         )
     endif()
 endif()

@@ -11,6 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   ".qtc/package-manager/auto-setup.cmake"
   "CMakeFiles/3.31.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.31.2/CMakeSystem.cmake"
+  "/home/alien/Desktop/QtCreator/LogInApp/resource.qrc"
   "/usr/lib/cmake/Qt5/Qt5Config.cmake"
   "/usr/lib/cmake/Qt5/Qt5ConfigVersion.cmake"
   "/usr/lib/cmake/Qt5/Qt5ModuleLocation.cmake"
@@ -92,6 +93,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/LogInApp_autogen.dir/AutogenInfo.json"
+  "CMakeFiles/LogInApp_autogen.dir/AutoRcc_resource_EWIEGA46WW_Info.json"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 

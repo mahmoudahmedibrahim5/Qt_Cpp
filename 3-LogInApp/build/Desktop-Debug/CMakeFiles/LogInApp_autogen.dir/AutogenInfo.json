@@ -83,7 +83,8 @@
 		"/usr/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake",
 		"/usr/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake",
 		"/usr/share/cmake/Modules/CMakeParseArguments.cmake",
-		"/usr/share/cmake/Modules/GNUInstallDirs.cmake"
+		"/usr/share/cmake/Modules/GNUInstallDirs.cmake",
+		"/home/alien/Desktop/QtCreator/LogInApp/resource.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "/home/alien/Desktop/QtCreator/LogInApp",
 	"CROSS_CONFIG" : false,

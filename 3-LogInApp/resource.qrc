@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/resource">
+        <file>img/background.webp</file>
+        <file>img/Background_Natural background.jpeg</file>
+        <file>img/download.jpeg</file>
+    </qresource>
+</RCC>
